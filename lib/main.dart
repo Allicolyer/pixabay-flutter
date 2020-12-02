@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pixabay_flutter/imageList.dart';
+import 'package:pixabay_flutter/HomePage.dart';
 import 'package:flutter_dotenv/flutter_dotenv.dart';
 
 Future main() async {
@@ -25,7 +25,7 @@ class MyApp extends StatelessWidget {
         // is not restarted.
         primarySwatch: Colors.red,
       ),
-      home: ImageList(),
+      home: HomePage(),
     );
   }
 }

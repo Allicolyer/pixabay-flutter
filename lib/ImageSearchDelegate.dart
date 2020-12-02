@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-class SearchTermPage extends SearchDelegate {
+class ImageSearchDelegate extends SearchDelegate {
   @override
   List<Widget> buildActions(BuildContext context) {
     // erases query when closed is pressed
@@ -29,7 +29,7 @@ class SearchTermPage extends SearchDelegate {
   @override
   Widget buildResults(BuildContext context) {
     close(context, query);
-    return null;
+    return Text(query);
   }
 
   List<String> recentList = ["Birds", "Owls"];
