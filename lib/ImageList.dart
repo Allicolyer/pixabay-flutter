@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:pixabay_flutter/apiCall.dart';
-import 'package:pixabay_flutter/ClickableImage.dart';
+import 'package:pixabay_flutter/OpacityImage.dart';
 import 'package:pixabay_flutter/ImageScreen.dart';
 
 class ImageList extends StatefulWidget {
@@ -49,7 +49,7 @@ class _ImageListState extends State<ImageList> {
                     ),
                   );
                 },
-                child: ClickableImage(item['previewURL'])))
+                child: OpacityImage(item['previewURL'])))
           });
     } else {
       children.add(new Text("Search for some images"));

@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:pixabay_flutter/ClickableImage.dart';
+import 'package:pixabay_flutter/OpacityImage.dart';
 
 class ImageScreen extends StatelessWidget {
   // Declare a field that holds the image.
@@ -15,6 +15,8 @@ class ImageScreen extends StatelessWidget {
         appBar: AppBar(
           title: Text(url),
         ),
-        body: new ClickableImage(url));
+        body: new Draggable(
+            feedback: OpacityImage(url, 0.7),
+            child: OpacityImage(url)));
   }
 }
